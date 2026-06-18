@@ -3,6 +3,7 @@ import folium
 import webbrowser
 import os
 import math
+from branca.element import Element
 
 my_lat = 37.524838667326
 my_lon = 126.924186745271
@@ -22,6 +23,12 @@ states = data["states"]
 # 서울 중심 지도
 m = folium.Map(location=[37.5665, 126.9780], zoom_start=6)
 
+folium.Marker(
+    [my_lat, my_lon],
+    popup="내 위치",
+    icon=folium.Icon(color="green")
+).add_to(m)
+
 count = 0
 
 min_distance = 999999
@@ -31,6 +38,12 @@ nearest_lon = None
 nearest_callsign = None
 nearest_distance = None
 
+collected_planes = set()
+
+if os.path.exists("collector.txt"):
+    with open("collector.txt", "r", encoding="utf-8") as f:
+        for line in f:
+            collected_planes.add(line.strip())
 
 for plane in states:
     callsign = plane[1]
@@ -43,7 +56,7 @@ for plane in states:
     if longitude is not None and latitude is not None:
         # 한국 근처 범위
         if 120 <= longitude <= 140 and 30 <= latitude <= 45:
-            count += 1
+          
 
             distance = calculate_distance(
               my_lat,
@@ -53,6 +66,15 @@ for plane in states:
             )
 
             if distance < min_distance:
+              
+              if callsign and callsign not in collected_planes:
+                collected_planes.add(callsign)
+
+                with open("collector.txt", "a", encoding="utf-8") as f:
+                     f.write(callsign + "\n")
+
+                print("새 비행기 발견!", callsign)
+
               min_distance = distance
 
               nearest_lat = latitude
@@ -72,6 +94,11 @@ for plane in states:
                 🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.
                 """
             distance = calculate_distance(my_lat, my_lon, latitude, longitude)
+           
+            if distance > 50:
+                continue
+            
+            count += 1
 
             if distance < min_distance:
                 min_distance = distance
@@ -108,9 +135,33 @@ if nearest_lat is not None and nearest_lon is not None:
         weight=4,
         tooltip=f"가장 가까운 비행기: {nearest_callsign}"
     ).add_to(m)
-print("한국 근처 비행기 수:", count)
+print("50km 이내 비행기 수:", count)
 
 file_name = "sky_map_nearest.html"
+
+info_box = f"""
+<div style="
+position: fixed;
+top: 20px;
+right: 20px;
+width: 250px;
+background-color: white;
+border: 2px solid black;
+padding: 10px;
+z-index: 9999;
+font-size: 14px;
+">
+
+<h4>✈ 가장 가까운 비행기</h4>
+
+<b>콜사인:</b> {nearest_callsign}<br>
+<b>거리:</b> {round(nearest_distance,2)} km
+
+</div>
+"""
+
+m.get_root().html.add_child(Element(info_box))
+
 m.save(file_name)
 
 webbrowser.open("file://" + os.path.realpath(file_name))
