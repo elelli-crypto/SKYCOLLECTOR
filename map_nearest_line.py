@@ -139,6 +139,9 @@ print("50km 이내 비행기 수:", count)
 
 file_name = "sky_map_nearest.html"
 
+recent_planes = list(collected_planes)[-3:]
+recent_text = "<br>".join(recent_planes)
+
 info_box = f"""
 <div style="
 position: fixed;
@@ -155,7 +158,14 @@ font-size: 14px;
 <h4>✈ 가장 가까운 비행기</h4>
 
 <b>콜사인:</b> {nearest_callsign}<br>
-<b>거리:</b> {round(nearest_distance,2)} km
+<b>거리:</b> {round(nearest_distance,2)} km<br>
+
+<hr>
+<b>수집한 비행기:</b> {len(collected_planes)} 대
+
+<hr>
+<b>최근 수집:</b><br>
+{recent_text}
 
 </div>
 """
