@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_da23b6484e3cca4cc6c14f8ae508b3f0 {
+                #map_be037a9f1c7de471e62cd9807fe91738 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -70,7 +70,30 @@
 
     🎉 NEW AIRCRAFT<br><br>
 
-    MNG601  <br>
+    ESR222  <br>
+    발견!
+
+    </div>
+    
+    
+    <div style="
+    position: fixed;
+    bottom: 180px;
+    right: 20px;
+    width: 250px;
+    background-color: #7b2cff;
+    color: white;
+    border: 3px solid black;
+    padding: 15px;
+    z-index: 9999;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    ">
+
+    🌟 RARE AIRCRAFT<br><br>
+
+    JAL462  <br>
     발견!
 
     </div>
@@ -90,26 +113,54 @@ font-size: 14px;
 
 <h4>✈ 가장 가까운 비행기</h4>
 
-<b>콜사인:</b> 95266280<br>
-<b>거리:</b> 8.32 km<br>
+<b>콜사인:</b> ESR222  <br>
+<b>거리:</b> 6.94 km<br>
 
 <hr>
-<b>수집한 비행기:</b> 14 대
+<b>수집한 비행기:</b> 39 대
+<br>
+<b>🏆 레벨:</b> Lv.3 Aviation Nerd<br>
+<b>XP:</b> 33 / 50
 
 <hr>
 <b>최근 수집:</b><br>
-JAL461  <br>AAR106<br>MNG601
+ESR222  <br>DOCH07<br>CARD41
+
+<hr>
+<b>✈ 수집 통계</b><br>
+CAR : 4<br>ANA : 4<br>JAL : 4<br>
 
 </div>
     
-            <div class="folium-map" id="map_da23b6484e3cca4cc6c14f8ae508b3f0" ></div>
+<div style="
+position: fixed;
+top: 20px;
+left: 20px;
+z-index: 9999;
+">
+<a href="collection.html" target="_blank"
+style="
+background-color:#2196F3;
+color:white;
+padding:12px 20px;
+text-decoration:none;
+font-weight:bold;
+border:2px solid black;
+border-radius:10px;
+font-size:16px;
+">
+📖 COLLECTION
+</a>
+</div>
+    
+            <div class="folium-map" id="map_be037a9f1c7de471e62cd9807fe91738" ></div>
         
 </body>
 <script>
     
     
-            var map_da23b6484e3cca4cc6c14f8ae508b3f0 = L.map(
-                "map_da23b6484e3cca4cc6c14f8ae508b3f0",
+            var map_be037a9f1c7de471e62cd9807fe91738 = L.map(
+                "map_be037a9f1c7de471e62cd9807fe91738",
                 {
                     center: [37.5665, 126.978],
                     crs: L.CRS.EPSG3857,
@@ -126,7 +177,7 @@ JAL461  <br>AAR106<br>MNG601
 
         
     
-            var tile_layer_84a8164b2e4c6c0d7f00d573580babc9 = L.tileLayer(
+            var tile_layer_95feb7aa326450f0fff7771d12fad0dd = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -143,17 +194,17 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-            tile_layer_84a8164b2e4c6c0d7f00d573580babc9.addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
+            tile_layer_95feb7aa326450f0fff7771d12fad0dd.addTo(map_be037a9f1c7de471e62cd9807fe91738);
         
     
-            var marker_ba61aa8edbf6d429c46a21658b67c870 = L.marker(
+            var marker_9ca91bb60a262ffd5c7428429e202a07 = L.marker(
                 [37.524838667326, 126.924186745271],
                 {
 }
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
         
     
-            var icon_eb51d5e2d40f5086355b4e74eeecc2dd = L.AwesomeMarkers.icon(
+            var icon_51239e916fd977f6aefd5cdb6a46a0df = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -164,34 +215,274 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-        var popup_a182437456ff566aec4c31d3975a9ace = L.popup({
+        var popup_d40ab5681be13d397f5ab0eaa8e1f25a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_94f405afa1fa11fe59c1068f4e7486ab = $(`<div id="html_94f405afa1fa11fe59c1068f4e7486ab" style="width: 100.0%; height: 100.0%;">내 위치</div>`)[0];
-                popup_a182437456ff566aec4c31d3975a9ace.setContent(html_94f405afa1fa11fe59c1068f4e7486ab);
+                var html_aed32c5747c742288a7d72a070a334f4 = $(`<div id="html_aed32c5747c742288a7d72a070a334f4" style="width: 100.0%; height: 100.0%;">내 위치</div>`)[0];
+                popup_d40ab5681be13d397f5ab0eaa8e1f25a.setContent(html_aed32c5747c742288a7d72a070a334f4);
             
         
 
-        marker_ba61aa8edbf6d429c46a21658b67c870.bindPopup(popup_a182437456ff566aec4c31d3975a9ace)
+        marker_9ca91bb60a262ffd5c7428429e202a07.bindPopup(popup_d40ab5681be13d397f5ab0eaa8e1f25a)
         ;
 
         
     
     
-                marker_ba61aa8edbf6d429c46a21658b67c870.setIcon(icon_eb51d5e2d40f5086355b4e74eeecc2dd);
+                marker_9ca91bb60a262ffd5c7428429e202a07.setIcon(icon_51239e916fd977f6aefd5cdb6a46a0df);
             
     
-            var marker_84fc0bc8ad57b7bf92c48c8837d05991 = L.marker(
-                [37.5145, 126.9984],
+            var marker_1eb592556ea3eee9d234d9ac0e8bf3bf = L.marker(
+                [37.4546, 127.1113],
                 {
 }
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
         
     
-            var icon_48eef8615f9adde7e6c695c57ae41d82 = L.AwesomeMarkers.icon(
+            var icon_153ab1f21090cd8d4816c306c0ef8897 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f28ee036a9356f3eecd26cfe0896ede1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc15ed73e13ee8973cb5b399658a7442 = $(`<div id="html_cc15ed73e13ee8973cb5b399658a7442" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ CARD16  </h3>                  <b>출발 국가:</b> United States<br>                  <b>현재 고도:</b> None m<br>                  <b>현재 속도:</b> 0 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_f28ee036a9356f3eecd26cfe0896ede1.setContent(html_cc15ed73e13ee8973cb5b399658a7442);
+            
+        
+
+        marker_1eb592556ea3eee9d234d9ac0e8bf3bf.bindPopup(popup_f28ee036a9356f3eecd26cfe0896ede1)
+        ;
+
+        
+    
+    
+            marker_1eb592556ea3eee9d234d9ac0e8bf3bf.bindTooltip(
+                `<div>
+                     ✈️ CARD16  
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1eb592556ea3eee9d234d9ac0e8bf3bf.setIcon(icon_153ab1f21090cd8d4816c306c0ef8897);
+            
+    
+            var marker_caf697b6b3f4c9a8ce51e7ef54ac70b7 = L.marker(
+                [37.4515, 127.1107],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_9e280adfe9ebdba8daf196529dfbb516 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9fe56ae177b9a3cdc421ce861f018d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d52c4ba0a056715b20965ae4beee594 = $(`<div id="html_7d52c4ba0a056715b20965ae4beee594" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ CARD43  </h3>                  <b>출발 국가:</b> United States<br>                  <b>현재 고도:</b> None m<br>                  <b>현재 속도:</b> 0 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_a9fe56ae177b9a3cdc421ce861f018d5.setContent(html_7d52c4ba0a056715b20965ae4beee594);
+            
+        
+
+        marker_caf697b6b3f4c9a8ce51e7ef54ac70b7.bindPopup(popup_a9fe56ae177b9a3cdc421ce861f018d5)
+        ;
+
+        
+    
+    
+            marker_caf697b6b3f4c9a8ce51e7ef54ac70b7.bindTooltip(
+                `<div>
+                     ✈️ CARD43  
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_caf697b6b3f4c9a8ce51e7ef54ac70b7.setIcon(icon_9e280adfe9ebdba8daf196529dfbb516);
+            
+    
+            var marker_034005b9eaa5adbfdbf01814bb0c1d90 = L.marker(
+                [37.4523, 127.1108],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_d79a9b3c1a1e9922bdb853a49ef6985d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f54ac99407e936928009cd1d94d4919 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b05bd235ec6a0fc8207a3ef28d7cef3 = $(`<div id="html_0b05bd235ec6a0fc8207a3ef28d7cef3" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ CARD41  </h3>                  <b>출발 국가:</b> United States<br>                  <b>현재 고도:</b> None m<br>                  <b>현재 속도:</b> 0 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_6f54ac99407e936928009cd1d94d4919.setContent(html_0b05bd235ec6a0fc8207a3ef28d7cef3);
+            
+        
+
+        marker_034005b9eaa5adbfdbf01814bb0c1d90.bindPopup(popup_6f54ac99407e936928009cd1d94d4919)
+        ;
+
+        
+    
+    
+            marker_034005b9eaa5adbfdbf01814bb0c1d90.bindTooltip(
+                `<div>
+                     ✈️ CARD41  
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_034005b9eaa5adbfdbf01814bb0c1d90.setIcon(icon_d79a9b3c1a1e9922bdb853a49ef6985d);
+            
+    
+            var marker_9d1efe79b71bf9eac49f2e6edb0e8b1e = L.marker(
+                [37.4531, 127.1098],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_03d68131ba8d9e9cc3995da0421e5749 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a700fa8aefa96333c02daba9b047098c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdaef293970ac04a57e863fa335a04e5 = $(`<div id="html_bdaef293970ac04a57e863fa335a04e5" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ CARD33  </h3>                  <b>출발 국가:</b> United States<br>                  <b>현재 고도:</b> None m<br>                  <b>현재 속도:</b> 1.29 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_a700fa8aefa96333c02daba9b047098c.setContent(html_bdaef293970ac04a57e863fa335a04e5);
+            
+        
+
+        marker_9d1efe79b71bf9eac49f2e6edb0e8b1e.bindPopup(popup_a700fa8aefa96333c02daba9b047098c)
+        ;
+
+        
+    
+    
+            marker_9d1efe79b71bf9eac49f2e6edb0e8b1e.bindTooltip(
+                `<div>
+                     ✈️ CARD33  
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9d1efe79b71bf9eac49f2e6edb0e8b1e.setIcon(icon_03d68131ba8d9e9cc3995da0421e5749);
+            
+    
+            var marker_8474ccf74c63558a394532c3e3e68371 = L.marker(
+                [37.1338, 127.1402],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_8fadb3da96f2e0f0658e7590d7923f86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a2c41702b7b31ce0553e85ae73ab2b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2a9d4c5c2874e4db91bdc77c7ecb7b5 = $(`<div id="html_a2a9d4c5c2874e4db91bdc77c7ecb7b5" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ HL9211  </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 312.42 m<br>                  <b>현재 속도:</b> 43.65 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_5a2c41702b7b31ce0553e85ae73ab2b7.setContent(html_a2a9d4c5c2874e4db91bdc77c7ecb7b5);
+            
+        
+
+        marker_8474ccf74c63558a394532c3e3e68371.bindPopup(popup_5a2c41702b7b31ce0553e85ae73ab2b7)
+        ;
+
+        
+    
+    
+            marker_8474ccf74c63558a394532c3e3e68371.bindTooltip(
+                `<div>
+                     ✈️ HL9211  
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8474ccf74c63558a394532c3e3e68371.setIcon(icon_8fadb3da96f2e0f0658e7590d7923f86);
+            
+    
+            var marker_7f529637752f5300bf04f354023483a8 = L.marker(
+                [37.5626, 126.793],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_ac10b0222943222b017fcc427ac44d1f = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -202,26 +493,26 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-        var popup_fc21c2cad05998e7a42c326bd58ac854 = L.popup({
+        var popup_ffe8d86b5a7034b31596863ecfe391e9 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_af3b3f3c18e14847c3d2ca91ae6e6b2f = $(`<div id="html_af3b3f3c18e14847c3d2ca91ae6e6b2f" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ 95266280</h3>                  <b>출발 국가:</b> United States<br>                  <b>현재 고도:</b> 335.28 m<br>                  <b>현재 속도:</b> 51.44 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
-                popup_fc21c2cad05998e7a42c326bd58ac854.setContent(html_af3b3f3c18e14847c3d2ca91ae6e6b2f);
+                var html_7ce48b16864ac2c47f6c63b21ebe78a3 = $(`<div id="html_7ce48b16864ac2c47f6c63b21ebe78a3" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ APJ743  </h3>                  <b>출발 국가:</b> Japan<br>                  <b>현재 고도:</b> None m<br>                  <b>현재 속도:</b> 4.89 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_ffe8d86b5a7034b31596863ecfe391e9.setContent(html_7ce48b16864ac2c47f6c63b21ebe78a3);
             
         
 
-        marker_84fc0bc8ad57b7bf92c48c8837d05991.bindPopup(popup_fc21c2cad05998e7a42c326bd58ac854)
+        marker_7f529637752f5300bf04f354023483a8.bindPopup(popup_ffe8d86b5a7034b31596863ecfe391e9)
         ;
 
         
     
     
-            marker_84fc0bc8ad57b7bf92c48c8837d05991.bindTooltip(
+            marker_7f529637752f5300bf04f354023483a8.bindTooltip(
                 `<div>
-                     ✈️ 95266280
+                     ✈️ APJ743  
                  </div>`,
                 {
   "sticky": true,
@@ -229,257 +520,17 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-                marker_84fc0bc8ad57b7bf92c48c8837d05991.setIcon(icon_48eef8615f9adde7e6c695c57ae41d82);
+                marker_7f529637752f5300bf04f354023483a8.setIcon(icon_ac10b0222943222b017fcc427ac44d1f);
             
     
-            var marker_dd6067b37224ece5be00ab94b0cfbbe1 = L.marker(
-                [37.2143, 126.8341],
+            var marker_d96c419373cce4cf9ab8128c0edbb2a7 = L.marker(
+                [37.387, 126.9298],
                 {
 }
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
         
     
-            var icon_7c7f0f9e39f2bd0737c31e1231388ff3 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "plane",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_1a9217717eb07607325e366513903558 = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_68c92329812b16def0d97149d35d4a3f = $(`<div id="html_68c92329812b16def0d97149d35d4a3f" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ DOCH07  </h3>                  <b>출발 국가:</b> Taiwan<br>                  <b>현재 고도:</b> 205.74 m<br>                  <b>현재 속도:</b> 19.8 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
-                popup_1a9217717eb07607325e366513903558.setContent(html_68c92329812b16def0d97149d35d4a3f);
-            
-        
-
-        marker_dd6067b37224ece5be00ab94b0cfbbe1.bindPopup(popup_1a9217717eb07607325e366513903558)
-        ;
-
-        
-    
-    
-            marker_dd6067b37224ece5be00ab94b0cfbbe1.bindTooltip(
-                `<div>
-                     ✈️ DOCH07  
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_dd6067b37224ece5be00ab94b0cfbbe1.setIcon(icon_7c7f0f9e39f2bd0737c31e1231388ff3);
-            
-    
-            var marker_ec12d69ba82f479780a72d3d8a164b1d = L.marker(
-                [37.1741, 127.1524],
-                {
-}
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
-        
-    
-            var icon_30d00c1ec98eb6becfcd463ec07813a5 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "plane",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_d9a5d10cf229fc2accc0d4f91722a74f = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_e6fdb9645242194a97a16cfce4f78a39 = $(`<div id="html_e6fdb9645242194a97a16cfce4f78a39" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ JJA6124 </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 2804.16 m<br>                  <b>현재 속도:</b> 126.82 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
-                popup_d9a5d10cf229fc2accc0d4f91722a74f.setContent(html_e6fdb9645242194a97a16cfce4f78a39);
-            
-        
-
-        marker_ec12d69ba82f479780a72d3d8a164b1d.bindPopup(popup_d9a5d10cf229fc2accc0d4f91722a74f)
-        ;
-
-        
-    
-    
-            marker_ec12d69ba82f479780a72d3d8a164b1d.bindTooltip(
-                `<div>
-                     ✈️ JJA6124 
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_ec12d69ba82f479780a72d3d8a164b1d.setIcon(icon_30d00c1ec98eb6becfcd463ec07813a5);
-            
-    
-            var marker_0b3e015073407d9e8e69ce8b348d5cf2 = L.marker(
-                [37.2448, 126.6518],
-                {
-}
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
-        
-    
-            var icon_47be7340eb8903d534e4ad8106da49a8 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "plane",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_24dc938e3b9b942c8fa24778c77d20ab = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_9f9e78e1738c866c4de8887d76e4881d = $(`<div id="html_9f9e78e1738c866c4de8887d76e4881d" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ GTI754  </h3>                  <b>출발 국가:</b> United States<br>                  <b>현재 고도:</b> 1714.5 m<br>                  <b>현재 속도:</b> 130.41 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
-                popup_24dc938e3b9b942c8fa24778c77d20ab.setContent(html_9f9e78e1738c866c4de8887d76e4881d);
-            
-        
-
-        marker_0b3e015073407d9e8e69ce8b348d5cf2.bindPopup(popup_24dc938e3b9b942c8fa24778c77d20ab)
-        ;
-
-        
-    
-    
-            marker_0b3e015073407d9e8e69ce8b348d5cf2.bindTooltip(
-                `<div>
-                     ✈️ GTI754  
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_0b3e015073407d9e8e69ce8b348d5cf2.setIcon(icon_47be7340eb8903d534e4ad8106da49a8);
-            
-    
-            var marker_3271401a59702dd6d664caa211f4f36c = L.marker(
-                [37.6286, 126.5612],
-                {
-}
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
-        
-    
-            var icon_7cc26e25a5af8d62c8962385c9267131 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "plane",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_5446f2fdd69745bb63e1cd682328783e = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_4a18e4c825a9b92f458ec62fac3fa873 = $(`<div id="html_4a18e4c825a9b92f458ec62fac3fa873" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ KAL023  </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 2750.82 m<br>                  <b>현재 속도:</b> 154.28 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
-                popup_5446f2fdd69745bb63e1cd682328783e.setContent(html_4a18e4c825a9b92f458ec62fac3fa873);
-            
-        
-
-        marker_3271401a59702dd6d664caa211f4f36c.bindPopup(popup_5446f2fdd69745bb63e1cd682328783e)
-        ;
-
-        
-    
-    
-            marker_3271401a59702dd6d664caa211f4f36c.bindTooltip(
-                `<div>
-                     ✈️ KAL023  
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_3271401a59702dd6d664caa211f4f36c.setIcon(icon_7cc26e25a5af8d62c8962385c9267131);
-            
-    
-            var marker_dc584469d0bd334f145bd27f41daf141 = L.marker(
-                [37.2684, 126.5913],
-                {
-}
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
-        
-    
-            var icon_71404aac77529ec0a3b0e1a84a0fc1be = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "plane",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_586a2cf4fff7e7f5a5e9269508b15f4b = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_751dd3c3f1bbf92de221ebc9c6678271 = $(`<div id="html_751dd3c3f1bbf92de221ebc9c6678271" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ KAL2022 </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 830.58 m<br>                  <b>현재 속도:</b> 102.08 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
-                popup_586a2cf4fff7e7f5a5e9269508b15f4b.setContent(html_751dd3c3f1bbf92de221ebc9c6678271);
-            
-        
-
-        marker_dc584469d0bd334f145bd27f41daf141.bindPopup(popup_586a2cf4fff7e7f5a5e9269508b15f4b)
-        ;
-
-        
-    
-    
-            marker_dc584469d0bd334f145bd27f41daf141.bindTooltip(
-                `<div>
-                     ✈️ KAL2022 
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-                marker_dc584469d0bd334f145bd27f41daf141.setIcon(icon_71404aac77529ec0a3b0e1a84a0fc1be);
-            
-    
-            var marker_e5867098789ea3b3c3723eb978661e04 = L.marker(
-                [37.4301, 127.0302],
-                {
-}
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
-        
-    
-            var icon_667ef72a7464932d89497a9d37bb9342 = L.AwesomeMarkers.icon(
+            var icon_97d1ba87d04ed8fe4be80ac7c1c10727 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -490,26 +541,26 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-        var popup_395a81c5de281cbfc95f7ea05c1a29e1 = L.popup({
+        var popup_5c7d5b92fee1718ea81e8844c34e4110 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_eced372e87dc7e545c4744d9d9b34c22 = $(`<div id="html_eced372e87dc7e545c4744d9d9b34c22" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ CKS819  </h3>                  <b>출발 국가:</b> United States<br>                  <b>현재 고도:</b> 4168.14 m<br>                  <b>현재 속도:</b> 219.04 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
-                popup_395a81c5de281cbfc95f7ea05c1a29e1.setContent(html_eced372e87dc7e545c4744d9d9b34c22);
+                var html_155c7bf2faaf811ca997f5ead2ea0b32 = $(`<div id="html_155c7bf2faaf811ca997f5ead2ea0b32" style="width: 100.0%; height: 100.0%;">                 <h3>✈️         </h3>                  <b>출발 국가:</b> United States<br>                  <b>현재 고도:</b> 12496.8 m<br>                  <b>현재 속도:</b> 182.88 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_5c7d5b92fee1718ea81e8844c34e4110.setContent(html_155c7bf2faaf811ca997f5ead2ea0b32);
             
         
 
-        marker_e5867098789ea3b3c3723eb978661e04.bindPopup(popup_395a81c5de281cbfc95f7ea05c1a29e1)
+        marker_d96c419373cce4cf9ab8128c0edbb2a7.bindPopup(popup_5c7d5b92fee1718ea81e8844c34e4110)
         ;
 
         
     
     
-            marker_e5867098789ea3b3c3723eb978661e04.bindTooltip(
+            marker_d96c419373cce4cf9ab8128c0edbb2a7.bindTooltip(
                 `<div>
-                     ✈️ CKS819  
+                     ✈️         
                  </div>`,
                 {
   "sticky": true,
@@ -517,17 +568,17 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-                marker_e5867098789ea3b3c3723eb978661e04.setIcon(icon_667ef72a7464932d89497a9d37bb9342);
+                marker_d96c419373cce4cf9ab8128c0edbb2a7.setIcon(icon_97d1ba87d04ed8fe4be80ac7c1c10727);
             
     
-            var marker_4af476bad656e7a5327d931429ee3e07 = L.marker(
-                [37.1632, 127.1653],
+            var marker_52c9336ce0d0968368c78c07a0c82b2b = L.marker(
+                [37.1622, 126.9961],
                 {
 }
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
         
     
-            var icon_a1dfd556d32d51ab615c42f06f0b3320 = L.AwesomeMarkers.icon(
+            var icon_c2a3aab41e4a7593162c7c5207919e7b = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -538,26 +589,26 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-        var popup_49828d3acebeac5fe7f95e68b90121b3 = L.popup({
+        var popup_b64b1e024de8b35050afdc67ffec9f80 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_9d1c6e124c26bba70972da40c6fa69a2 = $(`<div id="html_9d1c6e124c26bba70972da40c6fa69a2" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ HL9609  </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 655.32 m<br>                  <b>현재 속도:</b> 65.84 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
-                popup_49828d3acebeac5fe7f95e68b90121b3.setContent(html_9d1c6e124c26bba70972da40c6fa69a2);
+                var html_d96a6701a64be1d7c9a30560a926b4b9 = $(`<div id="html_d96a6701a64be1d7c9a30560a926b4b9" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ ASV728  </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 2743.2 m<br>                  <b>현재 속도:</b> 149.25 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_b64b1e024de8b35050afdc67ffec9f80.setContent(html_d96a6701a64be1d7c9a30560a926b4b9);
             
         
 
-        marker_4af476bad656e7a5327d931429ee3e07.bindPopup(popup_49828d3acebeac5fe7f95e68b90121b3)
+        marker_52c9336ce0d0968368c78c07a0c82b2b.bindPopup(popup_b64b1e024de8b35050afdc67ffec9f80)
         ;
 
         
     
     
-            marker_4af476bad656e7a5327d931429ee3e07.bindTooltip(
+            marker_52c9336ce0d0968368c78c07a0c82b2b.bindTooltip(
                 `<div>
-                     ✈️ HL9609  
+                     ✈️ ASV728  
                  </div>`,
                 {
   "sticky": true,
@@ -565,17 +616,17 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-                marker_4af476bad656e7a5327d931429ee3e07.setIcon(icon_a1dfd556d32d51ab615c42f06f0b3320);
+                marker_52c9336ce0d0968368c78c07a0c82b2b.setIcon(icon_c2a3aab41e4a7593162c7c5207919e7b);
             
     
-            var marker_f00416ccd62773093e0de862b17b703a = L.marker(
-                [37.4426, 126.9387],
+            var marker_edc0f4089a489b1377485c2f92c1deb0 = L.marker(
+                [37.3769, 127.0153],
                 {
 }
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
         
     
-            var icon_f2535f9ddd403ba8834ff079abdcbd85 = L.AwesomeMarkers.icon(
+            var icon_788e71eda0e14970184fdccde2b47acb = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -586,26 +637,26 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-        var popup_c890380d1c4a2b7a5d3bc46344a7e2c6 = L.popup({
+        var popup_edd7adf1ba1b433bb36e4502b56916e7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_720e0f4fc560f1045f518308c99d93dc = $(`<div id="html_720e0f4fc560f1045f518308c99d93dc" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ KAL1244 </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 899.16 m<br>                  <b>현재 속도:</b> 98.22 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
-                popup_c890380d1c4a2b7a5d3bc46344a7e2c6.setContent(html_720e0f4fc560f1045f518308c99d93dc);
+                var html_eafc07ffd605c7fd154be330f01dce6f = $(`<div id="html_eafc07ffd605c7fd154be330f01dce6f" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ JJA1328 </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 1417.32 m<br>                  <b>현재 속도:</b> 129.14 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_edd7adf1ba1b433bb36e4502b56916e7.setContent(html_eafc07ffd605c7fd154be330f01dce6f);
             
         
 
-        marker_f00416ccd62773093e0de862b17b703a.bindPopup(popup_c890380d1c4a2b7a5d3bc46344a7e2c6)
+        marker_edc0f4089a489b1377485c2f92c1deb0.bindPopup(popup_edd7adf1ba1b433bb36e4502b56916e7)
         ;
 
         
     
     
-            marker_f00416ccd62773093e0de862b17b703a.bindTooltip(
+            marker_edc0f4089a489b1377485c2f92c1deb0.bindTooltip(
                 `<div>
-                     ✈️ KAL1244 
+                     ✈️ JJA1328 
                  </div>`,
                 {
   "sticky": true,
@@ -613,17 +664,17 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-                marker_f00416ccd62773093e0de862b17b703a.setIcon(icon_f2535f9ddd403ba8834ff079abdcbd85);
+                marker_edc0f4089a489b1377485c2f92c1deb0.setIcon(icon_788e71eda0e14970184fdccde2b47acb);
             
     
-            var marker_f34793b9fad94b4bf06f308f4fed6a5c = L.marker(
-                [37.3836, 126.5294],
+            var marker_0d5f48c205d10a836734c032c3063945 = L.marker(
+                [37.4061, 126.5094],
                 {
 }
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
         
     
-            var icon_e940dac5331171841d24c64ecc1859e9 = L.AwesomeMarkers.icon(
+            var icon_d86c3ab17830528e4c506b01687978c2 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -634,26 +685,26 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-        var popup_da463cc34d9a2eee8641c3b65dbcd3f2 = L.popup({
+        var popup_4f2cfd3de2e7525ce1f147a64010e20e = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_57ecaa48adefa70a961d8eb28a092407 = $(`<div id="html_57ecaa48adefa70a961d8eb28a092407" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ KAL018  </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 563.88 m<br>                  <b>현재 속도:</b> 83.07 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
-                popup_da463cc34d9a2eee8641c3b65dbcd3f2.setContent(html_57ecaa48adefa70a961d8eb28a092407);
+                var html_39bd0a2f0e5b47ee095c3c3f813a501f = $(`<div id="html_39bd0a2f0e5b47ee095c3c3f813a501f" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ KAL402  </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 411.48 m<br>                  <b>현재 속도:</b> 78.64 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_4f2cfd3de2e7525ce1f147a64010e20e.setContent(html_39bd0a2f0e5b47ee095c3c3f813a501f);
             
         
 
-        marker_f34793b9fad94b4bf06f308f4fed6a5c.bindPopup(popup_da463cc34d9a2eee8641c3b65dbcd3f2)
+        marker_0d5f48c205d10a836734c032c3063945.bindPopup(popup_4f2cfd3de2e7525ce1f147a64010e20e)
         ;
 
         
     
     
-            marker_f34793b9fad94b4bf06f308f4fed6a5c.bindTooltip(
+            marker_0d5f48c205d10a836734c032c3063945.bindTooltip(
                 `<div>
-                     ✈️ KAL018  
+                     ✈️ KAL402  
                  </div>`,
                 {
   "sticky": true,
@@ -661,17 +712,401 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-                marker_f34793b9fad94b4bf06f308f4fed6a5c.setIcon(icon_e940dac5331171841d24c64ecc1859e9);
+                marker_0d5f48c205d10a836734c032c3063945.setIcon(icon_d86c3ab17830528e4c506b01687978c2);
             
     
-            var marker_1f9ec8cff58477df6f0dfdbe35041dcf = L.marker(
+            var marker_50182c3bf4abec036796819a320c6ed1 = L.marker(
+                [37.3344, 126.5944],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_2a757d122c883b05b4961e5a6338fd95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0aa0434b277488bacde05cca22b171ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b54828cf1391dd83fa41bfdc6fd3f63 = $(`<div id="html_5b54828cf1391dd83fa41bfdc6fd3f63" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ KAL1827 </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 3939.54 m<br>                  <b>현재 속도:</b> 188.38 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_0aa0434b277488bacde05cca22b171ce.setContent(html_5b54828cf1391dd83fa41bfdc6fd3f63);
+            
+        
+
+        marker_50182c3bf4abec036796819a320c6ed1.bindPopup(popup_0aa0434b277488bacde05cca22b171ce)
+        ;
+
+        
+    
+    
+            marker_50182c3bf4abec036796819a320c6ed1.bindTooltip(
+                `<div>
+                     ✈️ KAL1827 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50182c3bf4abec036796819a320c6ed1.setIcon(icon_2a757d122c883b05b4961e5a6338fd95);
+            
+    
+            var marker_1fcd4934fca7ca94ba64aa7d5e7850f6 = L.marker(
+                [37.4656, 126.9043],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_599c3781b6bea50ca1fae6568bca998e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26ab209c2dd9497dcfd76564d11cd18f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f928c77ec1e845202c65e0d376b61e60 = $(`<div id="html_f928c77ec1e845202c65e0d376b61e60" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ ESR222  </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 716.28 m<br>                  <b>현재 속도:</b> 90.23 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_26ab209c2dd9497dcfd76564d11cd18f.setContent(html_f928c77ec1e845202c65e0d376b61e60);
+            
+        
+
+        marker_1fcd4934fca7ca94ba64aa7d5e7850f6.bindPopup(popup_26ab209c2dd9497dcfd76564d11cd18f)
+        ;
+
+        
+    
+    
+            marker_1fcd4934fca7ca94ba64aa7d5e7850f6.bindTooltip(
+                `<div>
+                     ✈️ ESR222  
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1fcd4934fca7ca94ba64aa7d5e7850f6.setIcon(icon_599c3781b6bea50ca1fae6568bca998e);
+            
+    
+            var marker_fd60aa9dc977cf15c20c7689db8fe8de = L.marker(
+                [37.3287, 126.578],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_4302c64a1260ca47e3de0863ab5c7a54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8096ab1152c3ff263d0c7f95ce9da335 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9529a88db2369086e3f4614e338f7dde = $(`<div id="html_9529a88db2369086e3f4614e338f7dde" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ KAL072  </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 952.5 m<br>                  <b>현재 속도:</b> 101.91 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_8096ab1152c3ff263d0c7f95ce9da335.setContent(html_9529a88db2369086e3f4614e338f7dde);
+            
+        
+
+        marker_fd60aa9dc977cf15c20c7689db8fe8de.bindPopup(popup_8096ab1152c3ff263d0c7f95ce9da335)
+        ;
+
+        
+    
+    
+            marker_fd60aa9dc977cf15c20c7689db8fe8de.bindTooltip(
+                `<div>
+                     ✈️ KAL072  
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd60aa9dc977cf15c20c7689db8fe8de.setIcon(icon_4302c64a1260ca47e3de0863ab5c7a54);
+            
+    
+            var marker_2fad4afcb563b6a24f87e7d597b166ae = L.marker(
+                [37.5605, 126.794],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_8fc76baa0db5a57bc80523d76e0a62cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12fe58145db5a6e521280dd8163c68e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52bed908938d2d4b48575c7ffd318646 = $(`<div id="html_52bed908938d2d4b48575c7ffd318646" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ KAL1272 </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> None m<br>                  <b>현재 속도:</b> 9.77 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_12fe58145db5a6e521280dd8163c68e6.setContent(html_52bed908938d2d4b48575c7ffd318646);
+            
+        
+
+        marker_2fad4afcb563b6a24f87e7d597b166ae.bindPopup(popup_12fe58145db5a6e521280dd8163c68e6)
+        ;
+
+        
+    
+    
+            marker_2fad4afcb563b6a24f87e7d597b166ae.bindTooltip(
+                `<div>
+                     ✈️ KAL1272 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2fad4afcb563b6a24f87e7d597b166ae.setIcon(icon_8fc76baa0db5a57bc80523d76e0a62cb);
+            
+    
+            var marker_e77330b24479e49873ad9d7fcbe862e4 = L.marker(
+                [37.5489, 126.7998],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_0aa530a97d0e1c1d80335330decb3b98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4f5d644c23866613f5dfc61e88ecb46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2c307bd6c802ceb704883845ef0c597 = $(`<div id="html_a2c307bd6c802ceb704883845ef0c597" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ KAL1268 </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 68.58 m<br>                  <b>현재 속도:</b> 70.57 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_e4f5d644c23866613f5dfc61e88ecb46.setContent(html_a2c307bd6c802ceb704883845ef0c597);
+            
+        
+
+        marker_e77330b24479e49873ad9d7fcbe862e4.bindPopup(popup_e4f5d644c23866613f5dfc61e88ecb46)
+        ;
+
+        
+    
+    
+            marker_e77330b24479e49873ad9d7fcbe862e4.bindTooltip(
+                `<div>
+                     ✈️ KAL1268 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e77330b24479e49873ad9d7fcbe862e4.setIcon(icon_0aa530a97d0e1c1d80335330decb3b98);
+            
+    
+            var marker_1ada5dc4b5397550757fceb78121c87a = L.marker(
+                [37.5664, 126.7839],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_bb120ceb3feb3318aec31615223eb4a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6cdf7473a21a5a380fde680972f4ea8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90ba04d56f2ea4beece20dc7f4154284 = $(`<div id="html_90ba04d56f2ea4beece20dc7f4154284" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ APJ768  </h3>                  <b>출발 국가:</b> Japan<br>                  <b>현재 고도:</b> 220.98 m<br>                  <b>현재 속도:</b> 81.5 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_6cdf7473a21a5a380fde680972f4ea8a.setContent(html_90ba04d56f2ea4beece20dc7f4154284);
+            
+        
+
+        marker_1ada5dc4b5397550757fceb78121c87a.bindPopup(popup_6cdf7473a21a5a380fde680972f4ea8a)
+        ;
+
+        
+    
+    
+            marker_1ada5dc4b5397550757fceb78121c87a.bindTooltip(
+                `<div>
+                     ✈️ APJ768  
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ada5dc4b5397550757fceb78121c87a.setIcon(icon_bb120ceb3feb3318aec31615223eb4a7);
+            
+    
+            var marker_a648a21dadc19e75680234250cf51bd9 = L.marker(
+                [37.5606, 126.794],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_6d07a15ff7867f6f4d968303d7ecbf43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2ee3b48d1277a6a34ca9f4e078409ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_464745118ec9a81426f0a7fa9f612b1b = $(`<div id="html_464745118ec9a81426f0a7fa9f612b1b" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ XUM2597 </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> None m<br>                  <b>현재 속도:</b> 9.26 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_a2ee3b48d1277a6a34ca9f4e078409ad.setContent(html_464745118ec9a81426f0a7fa9f612b1b);
+            
+        
+
+        marker_a648a21dadc19e75680234250cf51bd9.bindPopup(popup_a2ee3b48d1277a6a34ca9f4e078409ad)
+        ;
+
+        
+    
+    
+            marker_a648a21dadc19e75680234250cf51bd9.bindTooltip(
+                `<div>
+                     ✈️ XUM2597 
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a648a21dadc19e75680234250cf51bd9.setIcon(icon_6d07a15ff7867f6f4d968303d7ecbf43);
+            
+    
+            var marker_04a35c6967a52a8184b09a1fccf6de51 = L.marker(
+                [37.1991, 126.622],
+                {
+}
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
+        
+    
+            var icon_130af9f9e47c43c1d3fb94c37cff23fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e34fffbaad24088efb2df8b7c4e9e7e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34349ddeb8d3fb5e1ebeaffe8acd6d16 = $(`<div id="html_34349ddeb8d3fb5e1ebeaffe8acd6d16" style="width: 100.0%; height: 100.0%;">                 <h3>✈️ AAR360  </h3>                  <b>출발 국가:</b> Republic of Korea<br>                  <b>현재 고도:</b> 1592.58 m<br>                  <b>현재 속도:</b> 114.99 m/s<br><br>                  🌍 지금 이 비행기는 당신 위의 하늘을 지나가는 중입니다.                 </div>`)[0];
+                popup_e34fffbaad24088efb2df8b7c4e9e7e6.setContent(html_34349ddeb8d3fb5e1ebeaffe8acd6d16);
+            
+        
+
+        marker_04a35c6967a52a8184b09a1fccf6de51.bindPopup(popup_e34fffbaad24088efb2df8b7c4e9e7e6)
+        ;
+
+        
+    
+    
+            marker_04a35c6967a52a8184b09a1fccf6de51.bindTooltip(
+                `<div>
+                     ✈️ AAR360  
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_04a35c6967a52a8184b09a1fccf6de51.setIcon(icon_130af9f9e47c43c1d3fb94c37cff23fa);
+            
+    
+            var marker_fb5c4177eccd26d8682050bfa9b1cbfb = L.marker(
                 [37.524838667326, 126.924186745271],
                 {
 }
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
         
     
-            var icon_9a720538c0998d94886ca4bf4dd61fac = L.AwesomeMarkers.icon(
+            var icon_b644d1c169fe870d0ea15c74ce76b987 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -682,24 +1117,24 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-        var popup_8a28bc8e7221b63c6ec6563012ae54e7 = L.popup({
+        var popup_6efb642a2f66e9e3ab4ad479cbe5d701 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_2d31a962471a35f67ea73af58f93957c = $(`<div id="html_2d31a962471a35f67ea73af58f93957c" style="width: 100.0%; height: 100.0%;">내 위치</div>`)[0];
-                popup_8a28bc8e7221b63c6ec6563012ae54e7.setContent(html_2d31a962471a35f67ea73af58f93957c);
+                var html_a937af6f6e7749bb541a2e3869522c0b = $(`<div id="html_a937af6f6e7749bb541a2e3869522c0b" style="width: 100.0%; height: 100.0%;">내 위치</div>`)[0];
+                popup_6efb642a2f66e9e3ab4ad479cbe5d701.setContent(html_a937af6f6e7749bb541a2e3869522c0b);
             
         
 
-        marker_1f9ec8cff58477df6f0dfdbe35041dcf.bindPopup(popup_8a28bc8e7221b63c6ec6563012ae54e7)
+        marker_fb5c4177eccd26d8682050bfa9b1cbfb.bindPopup(popup_6efb642a2f66e9e3ab4ad479cbe5d701)
         ;
 
         
     
     
-            marker_1f9ec8cff58477df6f0dfdbe35041dcf.bindTooltip(
+            marker_fb5c4177eccd26d8682050bfa9b1cbfb.bindTooltip(
                 `<div>
                      📍 내 위치
                  </div>`,
@@ -709,18 +1144,18 @@ JAL461  <br>AAR106<br>MNG601
             );
         
     
-                marker_1f9ec8cff58477df6f0dfdbe35041dcf.setIcon(icon_9a720538c0998d94886ca4bf4dd61fac);
+                marker_fb5c4177eccd26d8682050bfa9b1cbfb.setIcon(icon_b644d1c169fe870d0ea15c74ce76b987);
             
     
-            var poly_line_28d8a38af274b1535f641fbbc35f2205 = L.polyline(
-                [[37.524838667326, 126.924186745271], [37.5145, 126.9984]],
+            var poly_line_e62bab406ea84862a7b5713a5c34d651 = L.polyline(
+                [[37.524838667326, 126.924186745271], [37.4656, 126.9043]],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
-            ).addTo(map_da23b6484e3cca4cc6c14f8ae508b3f0);
+            ).addTo(map_be037a9f1c7de471e62cd9807fe91738);
         
     
-            poly_line_28d8a38af274b1535f641fbbc35f2205.bindTooltip(
+            poly_line_e62bab406ea84862a7b5713a5c34d651.bindTooltip(
                 `<div>
-                     가장 가까운 비행기: 95266280
+                     가장 가까운 비행기: ESR222  
                  </div>`,
                 {
   "sticky": true,
