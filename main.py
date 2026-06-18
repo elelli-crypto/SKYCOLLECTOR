@@ -40,6 +40,8 @@ nearest_distance = None
 
 collected_planes = set()
 
+new_aircraft = ""
+
 if os.path.exists("collector.txt"):
     with open("collector.txt", "r", encoding="utf-8") as f:
         for line in f:
@@ -71,7 +73,9 @@ for plane in states:
                 collected_planes.add(callsign)
 
                 with open("collector.txt", "a", encoding="utf-8") as f:
-                     f.write(callsign + "\n")
+                    f.write(callsign + "\n")
+
+                new_aircraft = callsign
 
                 print("새 비행기 발견!", callsign)
 
@@ -170,6 +174,32 @@ font-size: 14px;
 </div>
 """
 
+if new_aircraft:
+
+    popup_box = f"""
+    <div style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+    background-color: gold;
+    border: 3px solid black;
+    padding: 15px;
+    z-index: 9999;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    ">
+
+    🎉 NEW AIRCRAFT<br><br>
+
+    {new_aircraft}<br>
+    발견!
+
+    </div>
+    """
+
+    m.get_root().html.add_child(Element(popup_box))
 m.get_root().html.add_child(Element(info_box))
 
 m.save(file_name)
